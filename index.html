@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesus Youth – Deine katholische Jugendgemeinschaft</title>
+  <meta name="description" content="Jesus Youth ist eine lebendige katholische Jugendgemeinschaft in der Schweiz. Wir verbinden junge Christen durch Gebet, Gemeinschaft und Mission.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===================================================
+     NAVIGATION
+     =================================================== -->
+<nav class="nav" id="nav">
+  <div class="nav__container">
+    <a href="#" class="nav__logo">
+      <span class="nav__logo-icon">✝</span>
+      <span class="nav__logo-text">Jesus Youth Switzerland</span>
+    </a>
+
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#ueber-uns"       class="nav__link" data-i18n="nav.about">Über uns</a></li>
+      <li><a href="#veranstaltungen" class="nav__link" data-i18n="nav.events">Veranstaltungen</a></li>
+      <li><a href="#mitmachen"       class="nav__link" data-i18n="nav.join">Mitmachen</a></li>
+      <li><a href="#faq"             class="nav__link" data-i18n="nav.faq">FAQ</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <i class="fa-solid fa-globe"></i>
+        <span id="langLabel">EN</span>
+      </button>
+      <a href="#join" class="btn btn--primary" data-i18n="nav.cta">Jetzt beitreten →</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================================================
+     HERO
+     =================================================== -->
+<section class="hero" id="hero">
+  <div class="hero__container">
+    <div class="hero__content">
+      <span class="hero__badge" data-i18n="hero.badge">Katholische Jugendgemeinschaft</span>
+      <h1 class="hero__headline">
+        <span data-i18n="hero.h1.line1">Deine Gemeinschaft.</span><br>
+        <span data-i18n="hero.h1.line2">Dein Glaube.</span><br>
+        <span class="hero__headline-accent" data-i18n="hero.h1.line3">Dein Leben.</span>
+      </h1>
+      <p class="hero__subtext" data-i18n="hero.sub">
+        Jesus Youth verbindet junge Christen in der Schweiz durch Gebet, echte Gemeinschaft
+        und aktive Mission — für ein Leben voller Tiefe, Freude und Begeisterung.
+      </p>
+      <div class="hero__actions">
+        <a href="#join"      class="btn btn--primary btn--lg" data-i18n="hero.cta1">Jetzt mitmachen →</a>
+        <a href="#ueber-uns" class="btn btn--ghost btn--lg"   data-i18n="hero.cta2">Mehr erfahren</a>
+      </div>
+    </div>
+
+    <div class="hero__grid">
+      <div class="hero__card hero__card--1">
+        <i class="fa-solid fa-cross hero__card-icon"></i>
+        <span data-i18n="hero.card.eucharist">Eucharistie</span>
+      </div>
+      <div class="hero__card hero__card--2">
+        <i class="fa-solid fa-hands-praying hero__card-icon"></i>
+        <span data-i18n="hero.card.prayer">Gebet</span>
+      </div>
+      <div class="hero__card hero__card--3">
+        <i class="fa-solid fa-music hero__card-icon"></i>
+        <span data-i18n="hero.card.praise">Lobpreis</span>
+      </div>
+      <div class="hero__card hero__card--5">
+        <i class="fa-solid fa-people-group hero__card-icon"></i>
+        <span data-i18n="hero.card.community">Gemeinschaft</span>
+      </div>
+      <div class="hero__card hero__card--6">
+        <i class="fa-solid fa-globe hero__card-icon"></i>
+        <span data-i18n="hero.card.mission">Mission</span>
+      </div>
+      <div class="hero__card hero__card--8">
+        <i class="fa-solid fa-campground hero__card-icon"></i>
+        <span data-i18n="hero.card.retreats">Retreats</span>
+      </div>
+      <div class="hero__card hero__card--9">
+        <i class="fa-solid fa-fire-flame-curved hero__card-icon"></i>
+        <span data-i18n="hero.card.adoration">Anbetung</span>
+      </div>
+      <div class="hero__card hero__card--11">
+        <i class="fa-solid fa-house hero__card-icon"></i>
+        <span data-i18n="hero.card.family">Familie</span>
+      </div>
+      <div class="hero__card hero__card--12">
+        <i class="fa-solid fa-calendar-days hero__card-icon"></i>
+        <span data-i18n="hero.card.events">Events</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     PARTNER LOGOS
+     =================================================== -->
+<section class="partners" id="partners">
+  <p class="partners__label" data-i18n="partners.label">Unterstützt von &amp; in Zusammenarbeit mit</p>
+  <div class="partners__track-wrapper">
+    <div class="partners__track">
+      <span class="partner-logo">Bistum Chur</span>
+      <span class="partner-logo">Bistum Basel</span>
+      <span class="partner-logo">Bistum St.&nbsp;Gallen</span>
+      <span class="partner-logo">Junge Kirche Schweiz</span>
+      <span class="partner-logo">KJG Schweiz</span>
+      <span class="partner-logo">Kolping Schweiz</span>
+      <span class="partner-logo">Caritas Schweiz</span>
+      <span class="partner-logo">JKWS</span>
+      <!-- duplicate for seamless loop -->
+      <span class="partner-logo">Bistum Chur</span>
+      <span class="partner-logo">Bistum Basel</span>
+      <span class="partner-logo">Bistum St.&nbsp;Gallen</span>
+      <span class="partner-logo">Junge Kirche Schweiz</span>
+      <span class="partner-logo">KJG Schweiz</span>
+      <span class="partner-logo">Kolping Schweiz</span>
+      <span class="partner-logo">Caritas Schweiz</span>
+      <span class="partner-logo">JKWS</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     MISSION / ABOUT
+     =================================================== -->
+<section class="mission" id="ueber-uns">
+  <div class="container">
+
+    <div class="mission__quote">
+      <span class="mission__quote-mark">&ldquo;</span>
+      <p data-i18n-html="mission.quote">
+        Viele Jugendliche suchen nicht einfach Unterhaltung —<br>
+        sie suchen <em>echte Verbindung</em>, <em>tiefe Freundschaft</em>
+        und einen <em>Sinn im Leben.</em>
+      </p>
+    </div>
+
+    <div class="mission__body">
+      <div class="mission__text">
+        <h2 data-i18n-html="mission.h2">Wir bei Jesus Youth glauben daran,<br>dass Glaube lebendig ist.</h2>
+        <p data-i18n="mission.p1">
+          Seit Jahren verbinden wir junge Christen in der Schweiz durch authentische
+          Gemeinschaft, kraftvolles Gebet und aktive Mission. Jesus Youth ist keine
+          Organisation — es ist eine Begegnung mit Gott und mit Menschen, die denselben
+          Weg gehen.
+        </p>
+        <p data-i18n="mission.p2">
+          Unsere Gemeinschaft ist offen für alle, die Gott suchen — unabhängig davon,
+          wo sie in ihrem Glaubensleben stehen. Kein Druck. Kein Urteil. Nur Offenheit.
+        </p>
+        <a href="#join" class="btn btn--primary" data-i18n="mission.cta">Lern uns kennen →</a>
+      </div>
+
+      <div class="mission__stats">
+        <div class="stat">
+          <span class="stat__number">500+</span>
+          <span class="stat__label" data-i18n="stat.members">Aktive Mitglieder</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">15+</span>
+          <span class="stat__label" data-i18n="stat.years">Jahre in der Schweiz</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================================================
+     PROGRAMS / PILLARS
+     =================================================== -->
+<section class="programs" id="angebote">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge" data-i18n="programs.badge">Unsere Schwerpunkte</span>
+      <h2 class="section-title"  data-i18n="programs.title">Was uns ausmacht</h2>
+      <p class="section-subtitle" data-i18n="programs.subtitle">Vier Säulen, die unsere Gemeinschaft tragen und prägen.</p>
+    </div>
+
+    <div class="programs__grid">
+      <div class="program-card">
+        <div class="program-card__icon"><i class="fa-solid fa-hands-praying"></i></div>
+        <h3 class="program-card__title" data-i18n="prog.prayer.title">Gebet & Spiritualität</h3>
+        <p class="program-card__text"   data-i18n="prog.prayer.text">
+          Gemeinsames Gebet, Anbetung und Stille als Herzstück unserer Gemeinschaft.
+          Wir wachsen im Glauben durch Gebetstreffen, Exerzitien und persönliche Stille.
+        </p>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card__icon"><i class="fa-solid fa-people-group"></i></div>
+        <h3 class="program-card__title" data-i18n="prog.community.title">Gemeinschaft & Freundschaft</h3>
+        <p class="program-card__text"   data-i18n="prog.community.text">
+          Echte Verbindungen entstehen in unseren Kleingruppen, Treffen und gemeinsamen
+          Erlebnissen. Freundschaften, die ein Leben lang tragen.
+        </p>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card__icon"><i class="fa-solid fa-globe"></i></div>
+        <h3 class="program-card__title" data-i18n="prog.mission.title">Mission & Evangelisation</h3>
+        <p class="program-card__text"   data-i18n="prog.mission.text">
+          Wir teilen unseren Glauben mit anderen — mutig und authentisch. Durch Outreach,
+          Zeugnis und kreativen Einsatz mitten in unserer Gesellschaft.
+        </p>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card__icon"><i class="fa-solid fa-music"></i></div>
+        <h3 class="program-card__title" data-i18n="prog.music.title">Musik & Kreativität</h3>
+        <p class="program-card__text"   data-i18n="prog.music.text">
+          Glaube kann feiern! Durch Lobpreis, Kunst und kreative Ausdrucksformen geben
+          wir unserem Glauben Gestalt und Stimme — lebendig und begeistert.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     EVENTS
+     =================================================== -->
+<section class="events" id="veranstaltungen">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge" data-i18n="events.badge">Highlights</span>
+      <h2 class="section-title"   data-i18n="events.title">Unsere Veranstaltungen</h2>
+      <p class="section-subtitle" data-i18n="events.subtitle">
+        Erlebe Jesus Youth hautnah — bei unvergesslichen Events, die verbinden und bewegen.
+      </p>
+    </div>
+
+    <div class="events__grid">
+
+      <!-- Event 1 -->
+      <div class="event-card">
+        <div class="event-card__image event-card__image--1">
+          <span class="event-card__tag" data-i18n="event1.tag">Flagship Event</span>
+        </div>
+        <div class="event-card__body">
+          <h3 class="event-card__title" data-i18n="event1.title">Awake Arise Ablaze</h3>
+          <p class="event-card__desc"   data-i18n="event1.desc">
+            Wir laden Sie herzlich ein, an diesem wunderschönen Tag der Begegnung, des Gottesdienstes, der Erneuerung und der Gemeinschaft teilzunehmen.
+          </p>
+          <div class="event-card__metrics">
+            <div class="metric">
+              <span class="metric__value">1</span>
+              <span class="metric__label" data-i18n="event1.m1">Tage</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">1×</span>
+              <span class="metric__label" data-i18n="event1.m2">Im Jahr</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn--outline" data-i18n="event.cta">Mehr erfahren →</a>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="event-card">
+        <div class="event-card__image event-card__image--2">
+          <span class="event-card__tag" data-i18n="event2.tag">Monatlich</span>
+        </div>
+        <div class="event-card__body">
+          <h3 class="event-card__title" data-i18n="event2.title">Monatliches Treffen</h3>
+          <p class="event-card__desc"   data-i18n="event2.desc">
+            Ein Abend voller Lobpreis, Gebet und Spiele.
+            Offen für alle, die sich nach mehr sehnen – egal, wo Sie im Leben stehen.
+          </p>
+          <div class="event-card__metrics">
+            <div class="metric">
+              <span class="metric__value">3h</span>
+              <span class="metric__label" data-i18n="event2.m1">Dauer</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">12×</span>
+              <span class="metric__label" data-i18n="event2.m2">Im Jahr</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn--outline" data-i18n="event.cta">Mehr erfahren →</a>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="event-card">
+        <div class="event-card__image event-card__image--3">
+          <span class="event-card__tag" data-i18n="event3.tag">Sommergrill</span>
+        </div>
+        <div class="event-card__body">
+          <h3 class="event-card__title" data-i18n="event3.title">Sommergrill</h3>
+          <p class="event-card__desc"   data-i18n="event3.desc">
+            Verbinden Sie Ihr Gebet und Ihre Gemeinschaft mit einem entspannten Grillabend und lassen Sie den Tag gemeinsam mit einem positiven Erlebnis ausklingen.
+          </p>
+          <div class="event-card__metrics">
+            <div class="metric">
+              <span class="metric__value">1</span>
+              <span class="metric__label" data-i18n="event3.m1">Tage</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">1×</span>
+              <span class="metric__label" data-i18n="event3.m2">Im Jahr</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn--outline" data-i18n="event.cta">Mehr erfahren →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     GALLERY
+     =================================================== -->
+<section class="gallery" id="galerie">
+  <div class="container">
+    <div class="section-header gallery__header">
+      <span class="section-badge section-badge--white" data-i18n="gallery.badge">Galerie</span>
+      <h2 class="section-title"  data-i18n="gallery.title">Momente aus unserem Gemeinschaftsleben</h2>
+      <p class="section-subtitle" data-i18n="gallery.subtitle">Bilder, die unsere Gemeinschaft zum Leben erwecken.</p>
+    </div>
+  </div>
+
+  <div class="gallery__track-wrapper">
+    <div class="gallery__track">
+      <div class="gallery__img"><img src="img/Gallery/1.jpeg"  alt="Community 1"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/2.jpeg"  alt="Community 2"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/3.jpeg"  alt="Community 3"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/4.jpeg"  alt="Community 4"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/5.jpeg"  alt="Community 5"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/6.jpeg"  alt="Community 6"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/7.jpeg"  alt="Community 7"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/8.jpeg"  alt="Community 8"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/9.jpeg"  alt="Community 9"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/10.jpeg" alt="Community 10" loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/11.jpeg" alt="Community 11" loading="lazy"></div>
+      <!-- Duplicated for seamless infinite loop -->
+      <div class="gallery__img"><img src="img/Gallery/1.jpeg"  alt="Community 1"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/2.jpeg"  alt="Community 2"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/3.jpeg"  alt="Community 3"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/4.jpeg"  alt="Community 4"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/5.jpeg"  alt="Community 5"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/6.jpeg"  alt="Community 6"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/7.jpeg"  alt="Community 7"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/8.jpeg"  alt="Community 8"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/9.jpeg"  alt="Community 9"  loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/10.jpeg" alt="Community 10" loading="lazy"></div>
+      <div class="gallery__img"><img src="img/Gallery/11.jpeg" alt="Community 11" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     TEAM
+     =================================================== -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge" data-i18n="team.badge">Unser Team</span>
+      <h2 class="section-title"  data-i18n="team.title">Dein Jesus Youth Leitungsteam</h2>
+    </div>
+  </div>
+
+  <div class="team__fan">
+
+    <div class="team-photo-card team-photo-card--1">
+      <div class="team-photo-card__glow"></div>
+      <i class="fa-solid fa-user-large team-photo-card__silhouette"></i>
+      <div class="team-photo-card__overlay">
+        <span class="team-photo-card__name">Reshmi Chitilappilly</span>
+        <span class="team-photo-card__role" data-i18n="member.reshmi.role">Coordinator</span>
+      </div>
+    </div>
+
+    <div class="team-photo-card team-photo-card--2">
+      <div class="team-photo-card__glow"></div>
+      <i class="fa-solid fa-user-large team-photo-card__silhouette"></i>
+      <div class="team-photo-card__overlay">
+        <span class="team-photo-card__name">Christo James</span>
+      </div>
+    </div>
+
+    <div class="team-photo-card team-photo-card--3">
+      <div class="team-photo-card__glow"></div>
+      <i class="fa-solid fa-user-large team-photo-card__silhouette"></i>
+      <div class="team-photo-card__overlay">
+        <span class="team-photo-card__name">Leya Pauly</span>
+      </div>
+    </div>
+
+    <div class="team-photo-card team-photo-card--4">
+      <div class="team-photo-card__glow"></div>
+      <i class="fa-solid fa-user-large team-photo-card__silhouette"></i>
+      <div class="team-photo-card__overlay">
+        <span class="team-photo-card__name">Sandra Simon</span>
+      </div>
+    </div>
+
+    <div class="team-photo-card team-photo-card--5">
+      <div class="team-photo-card__glow"></div>
+      <i class="fa-solid fa-user-large team-photo-card__silhouette"></i>
+      <div class="team-photo-card__overlay">
+        <span class="team-photo-card__name">Sebin John</span>
+      </div>
+    </div>
+
+    <div class="team-photo-card team-photo-card--6">
+      <div class="team-photo-card__glow"></div>
+      <i class="fa-solid fa-user-large team-photo-card__silhouette"></i>
+      <div class="team-photo-card__overlay">
+        <span class="team-photo-card__name">Christin Maria Iykerattu</span>
+        <span class="team-photo-card__role" data-i18n="member.christin.role">Europe Team Member</span>
+      </div>
+    </div>
+
+  </div><!-- /.team__fan -->
+  <span class="team__scroll-hint" aria-hidden="true" data-i18n="scroll.hint">← Wischen zum Erkunden →</span>
+
+</section>
+
+<!-- ===================================================
+     PROCESS / HOW TO JOIN
+     =================================================== -->
+<section class="process" id="mitmachen">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge"  data-i18n="process.badge">So funktioniert es</span>
+      <h2 class="section-title"   data-i18n="process.title">Deine ersten Schritte</h2>
+      <p class="section-subtitle" data-i18n="process.subtitle">Einfach anfangen — wir begleiten dich auf dem Weg.</p>
+    </div>
+
+    <div class="process__steps">
+
+      <div class="process__step">
+        <div class="process__step-number">01</div>
+        <div class="process__step-content">
+          <h3 data-i18n="step1.title">Erstkontakt</h3>
+          <p  data-i18n="step1.text">Schreib uns eine Nachricht oder komm einfach zu einem unserer offenen Events. Kein Druck, keine Verpflichtung — nur eine ehrliche Begegnung.</p>
+        </div>
+      </div>
+
+      <div class="process__connector"></div>
+
+      <div class="process__step">
+        <div class="process__step-number">02</div>
+        <div class="process__step-content">
+          <h3 data-i18n="step2.title">Willkommensabend</h3>
+          <p  data-i18n="step2.text">Du wirst zu einem Willkommensabend eingeladen, wo du das Team kennenlernst und die Gemeinschaft erlebst — entspannt und unkompliziert.</p>
+        </div>
+      </div>
+
+      <div class="process__connector"></div>
+
+      <div class="process__step">
+        <div class="process__step-number">03</div>
+        <div class="process__step-content">
+          <h3 data-i18n="step3.title">Gemeinschaft erleben</h3>
+          <p  data-i18n="step3.text">Du wirst in eine Kleingruppe eingeführt und nimmst an Treffen, Praise Nights und Veranstaltungen teil. Gemeinschaft wächst durch Erfahrung.</p>
+        </div>
+      </div>
+
+      <div class="process__connector"></div>
+
+      <div class="process__step">
+        <div class="process__step-number">04</div>
+        <div class="process__step-content">
+          <h3 data-i18n="step4.title">Aktiv werden</h3>
+          <p  data-i18n="step4.text">Bringe deine Gaben und Talente ein — als Teil des Teams, als Lobpreismitglied, als Mitorganisator oder in der Mission. Du gehörst dazu.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     TESTIMONIALS
+     =================================================== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge" data-i18n="testi.badge">Stimmen aus der Gemeinschaft</span>
+      <h2 class="section-title"  data-i18n="testi.title">Was unsere Mitglieder sagen</h2>
+    </div>
+
+    <div class="testimonials__grid" id="testimonialsGrid">
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <blockquote class="testimonial-card__quote" data-i18n="testi1.quote">
+          „Jesus Youth hat meinen Glauben aus einer trockenen Pflicht in eine lebendige
+          Beziehung verwandelt. Ich hätte nie gedacht, dass Gemeinschaft so viel Kraft geben kann."
+        </blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" style="background:#1e3a8a">JM</div>
+          <div>
+            <strong>Jonas Meier</strong>
+            <span data-i18n="testi1.role">22, Student Medizin</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <blockquote class="testimonial-card__quote" data-i18n="testi2.quote">
+          „Hier habe ich Menschen gefunden, die mein Leben wirklich kennen — mit allem.
+          Freundschaften, die ehrlich sind und tragen. Das ist Jesus Youth für mich."
+        </blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" style="background:#2563eb">MK</div>
+          <div>
+            <strong>Maria Koch</strong>
+            <span data-i18n="testi2.role">19, Lernende Kauffrau</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <blockquote class="testimonial-card__quote" data-i18n="testi3.quote">
+          „Das JY Weekend war ein Wendepunkt in meinem Leben. Ich kam als Skeptiker
+          und ging als jemand, der wieder an die Kraft des Gebets glaubt."
+        </blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" style="background:#3b82f6">LW</div>
+          <div>
+            <strong>Lukas Weber</strong>
+            <span data-i18n="testi3.role">25, Ingenieur</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card testimonials__extra">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <blockquote class="testimonial-card__quote" data-i18n="testi4.quote">
+          „Die Praise Night jeden Monat ist für mich wie ein Atemzug frischer Luft.
+          Dort kann ich ganz ich selbst sein — mit allen Fragen und allem Staunen."
+        </blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" style="background:#0f172a">SB</div>
+          <div>
+            <strong>Sophie Brunner</strong>
+            <span data-i18n="testi4.role">21, Studentin Sozialarbeit</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card testimonials__extra">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <blockquote class="testimonial-card__quote" data-i18n="testi5.quote">
+          „Was mich an Jesus Youth fasziniert: Niemand muss perfekt sein. Alle suchen,
+          alle wachsen — und das gemeinsam. Das macht den Unterschied."
+        </blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" style="background:#1d4ed8">DH</div>
+          <div>
+            <strong>David Huber</strong>
+            <span data-i18n="testi5.role">23, Lehrer Volksschule</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card testimonials__extra">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <blockquote class="testimonial-card__quote" data-i18n="testi6.quote">
+          „Ich war lange auf der Suche. Jesus Youth hat mir gezeigt, dass Glaube nicht
+          langweilig ist — er ist das aufregendste Abenteuer, das ich kenne."
+        </blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" style="background:#0369a1">EN</div>
+          <div>
+            <strong>Emma Nussbaum</strong>
+            <span data-i18n="testi6.role">20, Matura-Schülerin</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="testimonials__more">
+      <button class="btn btn--outline" id="showMoreBtn" data-i18n="show.more">Mehr Stimmen anzeigen ↓</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     FAQ
+     =================================================== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge" data-i18n="faq.badge">Häufige Fragen</span>
+      <h2 class="section-title"  data-i18n="faq.title">Deine Fragen — unsere Antworten</h2>
+    </div>
+
+    <div class="faq__list">
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          <span data-i18n="faq1.q">Was ist Jesus Youth genau?</span>
+          <i class="fa-solid fa-chevron-down faq__icon"></i>
+        </button>
+        <div class="faq__answer">
+          <p data-i18n="faq1.a">Jesus Youth ist eine internationale katholische Jugendbewegung, die 1972 in Kerala, Indien entstanden ist und heute in über 60 Ländern aktiv ist. In der Schweiz verbindet sie junge Christen im Alter von 16 bis 35 Jahren durch Gebet, Gemeinschaft und Mission. Wir sind eine charismatische Bewegung innerhalb der katholischen Kirche — lebendig, offen und voller Begeisterung für den Glauben.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          <span data-i18n="faq2.q">Muss ich besonders religiös sein, um mitzumachen?</span>
+          <i class="fa-solid fa-chevron-down faq__icon"></i>
+        </button>
+        <div class="faq__answer">
+          <p data-i18n="faq2.a">Nein! Jesus Youth ist offen für jeden, der sich für Glaube und Gemeinschaft interessiert — egal wo du in deinem Glaubensleben stehst. Ob du gerade erst anfängst, Fragen hast oder schon lange glaubst: Du bist willkommen. Niemand erwartet Perfektion, nur Offenheit.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          <span data-i18n="faq3.q">Für wen ist Jesus Youth gedacht?</span>
+          <i class="fa-solid fa-chevron-down faq__icon"></i>
+        </button>
+        <div class="faq__answer">
+          <p data-i18n="faq3.a">Jesus Youth richtet sich primär an junge Erwachsene zwischen 16 und 35 Jahren. Wir sind offen für alle, die unsere Werte teilen — unabhängig von Herkunft oder Hintergrund. Familien und ältere Geschwister sind bei besonderen Veranstaltungen ebenfalls herzlich willkommen.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          <span data-i18n="faq4.q">Wie kann ich mitmachen?</span>
+          <i class="fa-solid fa-chevron-down faq__icon"></i>
+        </button>
+        <div class="faq__answer">
+          <p data-i18n="faq4.a">Ganz einfach: Komm zu einer unserer offenen Veranstaltungen — zum Beispiel zur Praise Night — oder schreib uns direkt. Wir laden dich dann zu unserem nächsten Willkommensabend ein und begleiten dich in die Gemeinschaft. Kein Antrag, keine Verpflichtung, keine Kosten.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          <span data-i18n="faq5.q">Gibt es eine Mitgliedschaft oder Mitgliedsbeitrag?</span>
+          <i class="fa-solid fa-chevron-down faq__icon"></i>
+        </button>
+        <div class="faq__answer">
+          <p data-i18n="faq5.a">Es gibt keine formelle Mitgliedschaft mit Beitrag. Du bist Teil der Gemeinschaft, wenn du Teil der Gemeinschaft bist. Für spezifische Events können Teilnahmegebühren anfallen, die wir immer so niedrig wie möglich halten. Niemand soll wegen Geld ausgeschlossen werden.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          <span data-i18n="faq6.q">Welche Veranstaltungen bietet Jesus Youth an?</span>
+          <i class="fa-solid fa-chevron-down faq__icon"></i>
+        </button>
+        <div class="faq__answer">
+          <p data-i18n="faq6.a">Wir bieten ein breites Spektrum: monatliche Praise Nights, wöchentliche Kleingruppen, Bibelstudium, das jährliche JY Weekend, das Sommerlager, Tagesausflüge, soziale Projekte und vieles mehr. Unser Kalender ist gefüllt — und wir freuen uns auf dich dabei!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     CTA / JOIN
+     =================================================== -->
+<section class="cta-section" id="join">
+  <div class="container">
+    <div class="cta-section__inner">
+      <span class="section-badge section-badge--white" data-i18n="cta.badge">Bereit?</span>
+      <h2 class="cta-section__title"    data-i18n="cta.title">Werde Teil unserer Gemeinschaft.</h2>
+      <p class="cta-section__subtitle"  data-i18n="cta.subtitle">
+        Beginne noch heute deine Reise mit Jesus Youth — wir freuen uns auf dich.
+      </p>
+      <div class="cta-section__actions">
+        <a href="mailto:switzerland@jesusyouth.org" class="btn btn--white btn--lg"      data-i18n="cta.btn1">Kontakt aufnehmen →</a>
+        <a href="#veranstaltungen"                  class="btn btn--ghost-white btn--lg" data-i18n="cta.btn2">Events entdecken</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     FOOTER
+     =================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo footer__logo">
+          <span class="nav__logo-icon">✝</span>
+          <span class="nav__logo-text">Jesus Youth Switzerland</span>
+        </a>
+        <p class="footer__brand-text" data-i18n="footer.brand">
+          Deine katholische Jugendgemeinschaft in der Schweiz.
+          Lebendig, offen und verwurzelt im Glauben.
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="footer__social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__links-col">
+          <h4 data-i18n="footer.col1">Community</h4>
+          <ul>
+            <li><a href="#ueber-uns" data-i18n="footer.link.about">Über uns</a></li>
+            <li><a href="#team"      data-i18n="footer.link.team">Das Team</a></li>
+            <li><a href="#mitmachen" data-i18n="footer.link.join">Mitmachen</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-col">
+          <h4 data-i18n="footer.col2">Kontakt</h4>
+          <ul>
+            <li><a href="mailto:switzerland@jesusyouth.org">switzerland@jesusyouth.org</a></li>
+            <li><a href="#" data-i18n="footer.link.donate">Spenden</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p data-i18n="footer.copyright">© 2024 Jesus Youth Schweiz. Alle Rechte vorbehalten.</p>
+      <div class="footer__legal">
+        <a href="#" data-i18n="footer.credit">Mit ❤️ und Glauben von Sebin erstellt</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
