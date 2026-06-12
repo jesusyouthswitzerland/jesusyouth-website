@@ -709,6 +709,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   padding: 2rem 2rem 5.5rem;
   overflow: visible;
 }
+.team__fan--solo { justify-content: center; }
 
 .team-photo-card {
   position: relative;
@@ -1307,6 +1308,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
+  .team__fan--solo { justify-content: center; overflow-x: visible; padding-right: var(--px); }
   .team__fan::-webkit-scrollbar { display: none; }
 
   .team-photo-card {
